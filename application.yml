@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      #  如果想配置多个注册eureka，可以继续添加，以逗号分隔 比如地址A,地址B,地址C
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: eureka-client-name
+server:
+  port: 8760
+spring:
+  application:
+    name: eureka-client
